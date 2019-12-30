@@ -12,6 +12,9 @@ import VeeValidate, { Validator } from 'vee-validate'   //匯入檔案
 import TW from 'vee-validate/dist/locale/zh_TW'    //匯入語言包
 // import VueI18n from 'vue-i18n';Vue.use(VueI18n);
 
+import zhTW from 'vee-validate/dist/locale/zh_TW'
+import VueI18n from 'vue-i18n'
+
 import App from './App';
 import router from './router';
 import './bus';

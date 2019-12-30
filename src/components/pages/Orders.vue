@@ -12,8 +12,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, key) in sortOrder" :key="key"
-          v-if="orders.length"
+        <!-- v-if="orders.length" -->
+        <tr v-for="(item, key) in sortOrder" :key="key" 
           :class="{'text-secondary': !item.is_paid}">
           <td>{{ item.create_at | date }}</td>
           <td><span v-text="item.user.email" v-if="item.user"></span></td>
@@ -61,7 +61,7 @@ export default {
         vm.orders = response.data.orders;
         vm.pagination = response.data.pagination;
         vm.isLoading = false;
-        console.log(response);
+        console.log("取得訂單：",response);
       });
     },
   },

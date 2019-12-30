@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="text-right">
+      <Loading :active.sync="isLoading"></Loading>
       <button class="btn btn-primary" @click="openCouponModal(true)">
         建立新的優惠券
       </button>
